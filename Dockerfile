@@ -14,4 +14,4 @@ WORKDIR /var/www/html
 EXPOSE 8000
 
 #Run apache http server in the foreground
-CMD ["httpd", "-g", "daemon off;"8000"]
+CMD ["httpd", "-f", "-p", "8000", "-h", "/www"]
